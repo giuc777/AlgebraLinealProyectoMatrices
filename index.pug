@@ -1,0 +1,44 @@
+//Variables
+-var titulo = "Matrices"
+-var opciones = ["Suma", "Multiplicación"]
+
+//Cuerpo del HTML
+doctype HTML
+html 
+    head 
+        meta(charset="UTF-8")
+        title matrizMenu
+    body 
+        main.container__general
+            div.encabezado
+                header 
+                    h1.encabezado__titulo #{titulo}
+                nav.menu__opciones 
+                    a(href ="#" class ="menu_opciones__letras")
+                        ul.opciones__menu 
+                            each i in opciones
+                                li.menu_opciones__letras=i
+            article.contenido
+                section.contenido__cuerpo
+                    h2.contenido__cuerpo__titulo ¿Que es una matriz?
+                    p.contenido__cuerpo__contenido 
+                    |Son parte importante en la algebra lineal, y aque se estudian las 
+                    |propiedades de la mismas, ya que tienen complementan temas como los 
+                    |vectores y los sistemas de ecuaciones lineales.
+                    p.contenido__cuerpo__contenido 
+                    |Son elementos en conjuntos ordenados de una estructura de filas y columnas.
+                    |Dependiendo de sus filas y columnas que tenga pordemos hablar de que tiene 
+                    |cierta dimención.
+            footer
+                .container__footer
+                    p.contenido.foter
+                    |Este es un proyecto para el curso de Algebra lineal 
+                    |hecho por:
+                    ul.nombres 
+                        li.nombres__letras Gadiel 
+                        li.nombres__letras Jairon 
+                        li.nombres__letras Juan Luis
+                    p.licencia 
+                    |Redaccion y creación del proyecto hecho por los mismos.
+                    
+
