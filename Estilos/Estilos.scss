@@ -1,0 +1,58 @@
+$ColorFondo: black;
+$ColorClaroLetras: white;
+$Bigletrre: 40px;
+$Mediumlettre: 25px;
+$white_found: rgba(201, 213, 224, 0.10);
+
+*{
+    box-sizing: border-box;
+    padding-top: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.encabezado{
+    width: 100%;
+
+    background-image:url(../imagenes/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding-block-start: 20px;
+    header{
+        width: 100%;
+        height: 20vh;
+    }
+    &__titulo{
+        color: $ColorClaroLetras;
+        text-align: center;
+        font-size: $Bigletrre;
+    }
+    nav{
+        width: 100%;
+        height: 10vh;
+        background-color: $white_found ;
+    
+        ul{
+            list-style: none;
+            display: flex;
+
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+            color: $ColorClaroLetras;
+        }
+        li{
+            margin: 5px;
+            font-size: $Mediumlettre;
+            
+        }
+        :hover :nth-child(1) li{
+            border: 1px solid black;
+        }
+        
+    }
+
+
+}

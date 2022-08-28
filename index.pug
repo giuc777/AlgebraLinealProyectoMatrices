@@ -8,11 +8,16 @@ html
     head 
         meta(charset="UTF-8")
         title matrizMenu
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;700&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="./Estilos/Estilos.css") 
     body 
         main.container__general
             div.encabezado
-                header 
-                    h1.encabezado__titulo #{titulo}
+                header
+                    span  
+                        h1.encabezado__titulo #{titulo}
                 nav.menu__opciones 
                     a(href ="#" class ="menu_opciones__letras")
                         ul.opciones__menu 
