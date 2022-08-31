@@ -2,13 +2,23 @@ $ColorFondo: black;
 $ColorClaroLetras: white;
 $Bigletrre: 40px;
 $Mediumlettre: 25px;
-$white_found: rgba(201, 213, 224, 0.10);
+$white_found: rgba(201, 213, 224, 0.1);
+$color_resaltado: rgb(106, 103, 255);
+$LetraTitulo_Contenido: 35px;
+$LetraParafo_Contenido: 25px;
+$Letra_footer: 15px;
+$Opciones__list: 20px;
+$Opciones__responsive: 15px;
 
 *{
     box-sizing: border-box;
     padding-top: 0;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+.inactive{
+    display: none;
 }
 
 .encabezado{
@@ -36,8 +46,15 @@ $white_found: rgba(201, 213, 224, 0.10);
         ul{
             list-style: none;
             display: flex;
-
             justify-content: space-around;
+            li:hover:nth-child(1){
+                background-color: $color_resaltado;
+                cursor: pointer;
+            }
+            li:hover:nth-child(2){
+                background-color: $color_resaltado;
+                cursor: pointer;
+            }
         }
         a{
             text-decoration: none;
@@ -48,11 +65,130 @@ $white_found: rgba(201, 213, 224, 0.10);
             font-size: $Mediumlettre;
             
         }
-        :hover :nth-child(1) li{
-            border: 1px solid black;
-        }
+        
         
     }
-
-
+    .desplegar__opciones{
+        display: flex;
+        aside{
+            width: 205px;
+            height: 100px;
+            background-color: $ColorFondo;
+            border: 3px solid $color_resaltado;
+            a{
+                color: $ColorClaroLetras;
+                text-decoration: none;
+                font-size:$Opciones__list;
+                ul{
+                    list-style: none;
+                    margin-inline-start: 0;
+                    li:hover:nth-child(1){
+                        background-color: $color_resaltado;
+                    }
+                    li:hover:nth-child(2){
+                        background-color: $color_resaltado;
+                    }
+                    
+                    li{
+                        margin-block-start: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .option__temas{
+        margin-inline-start: 350px;
+        margin-block-end: 10px;
+    }
+    .option__operaciones{
+        margin-inline-start: 990px;
+        margin-block-end: 10px;
+    }
 }
+.contenido{
+    background-color: $ColorFondo;
+    display: grid;
+    justify-items: center;
+    &__cuerpo{
+        width: 70%;
+        text-align: justify;
+        padding-block-start: 30px;
+        padding-block-end: 30px;
+        padding-inline-start: 20px;
+        padding-inline-end: 20px;
+        background-color: $ColorClaroLetras;
+        &__titulo{
+            font-size: $LetraTitulo_Contenido;
+        }
+        &__contenido{
+            font-size: $LetraParafo_Contenido;
+        }
+    }
+}
+
+.footer{
+    background-color: $ColorFondo;
+    padding-block-start: 50px;
+    display: grid;
+    justify-items: center;
+    padding-block-end: 50px;
+    &__container{
+        width: 70%;
+
+        p{
+            color:$ColorClaroLetras;
+            font-size: $Letra_footer;
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            li{
+                font-size: $Letra_footer;
+                color: $ColorClaroLetras;
+                text-align: center;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 640px){
+    .encabezado{
+        .desplegar__opciones{
+            aside{
+                width: 170px;
+                height: 90px;
+                background-color: $ColorFondo;
+                border: 3px solid $color_resaltado;
+                a{
+                    color: $ColorClaroLetras;
+                    text-decoration: none;
+                    
+                    ul{
+                        list-style: none;
+                        margin-inline-start: 0;
+                        font-size: $Opciones__responsive;
+                        li:hover:nth-child(1){
+                            background-color: $color_resaltado;
+                        }
+                        li:hover:nth-child(2){
+                            background-color: $color_resaltado;
+                        }
+                        
+                        li{
+                            margin-block-start: 15px;
+                        }
+                    }
+                }
+            }
+            .option__temas{
+                margin-inline-start:5px;
+            }
+            .option__operaciones{
+                margin-inline-start: 260px;
+                margin-block-end: 10px;
+            }
+        }
+    }
+}
+

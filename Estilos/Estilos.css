@@ -6,6 +6,10 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+.inactive {
+  display: none;
+}
+
 .encabezado {
   width: 100%;
   background-image: url(../imagenes/fondo2.jpg);
@@ -37,6 +41,14 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+.encabezado nav ul li:hover:nth-child(1) {
+  background-color: rgb(106, 103, 255);
+  cursor: pointer;
+}
+.encabezado nav ul li:hover:nth-child(2) {
+  background-color: rgb(106, 103, 255);
+  cursor: pointer;
+}
 .encabezado nav a {
   text-decoration: none;
   color: white;
@@ -45,6 +57,138 @@
   margin: 5px;
   font-size: 25px;
 }
-.encabezado nav :hover :nth-child(1) li {
-  border: 1px solid black;
+.encabezado .desplegar__opciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.encabezado .desplegar__opciones aside {
+  width: 205px;
+  height: 100px;
+  background-color: black;
+  border: 3px solid rgb(106, 103, 255);
+}
+.encabezado .desplegar__opciones aside a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.encabezado .desplegar__opciones aside a ul {
+  list-style: none;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+}
+.encabezado .desplegar__opciones aside a ul li:hover:nth-child(1) {
+  background-color: rgb(106, 103, 255);
+}
+.encabezado .desplegar__opciones aside a ul li:hover:nth-child(2) {
+  background-color: rgb(106, 103, 255);
+}
+.encabezado .desplegar__opciones aside a ul li {
+  -webkit-margin-before: 15px;
+          margin-block-start: 15px;
+}
+.encabezado .option__temas {
+  -webkit-margin-start: 350px;
+          margin-inline-start: 350px;
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
+}
+.encabezado .option__operaciones {
+  -webkit-margin-start: 990px;
+          margin-inline-start: 990px;
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
+}
+
+.contenido {
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+.contenido__cuerpo {
+  width: 70%;
+  text-align: justify;
+  -webkit-padding-before: 30px;
+          padding-block-start: 30px;
+  -webkit-padding-after: 30px;
+          padding-block-end: 30px;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+  -webkit-padding-end: 20px;
+          padding-inline-end: 20px;
+  background-color: white;
+}
+.contenido__cuerpo__titulo {
+  font-size: 35px;
+}
+.contenido__cuerpo__contenido {
+  font-size: 25px;
+}
+
+.footer {
+  background-color: black;
+  -webkit-padding-before: 50px;
+          padding-block-start: 50px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-padding-after: 50px;
+          padding-block-end: 50px;
+}
+.footer__container {
+  width: 70%;
+}
+.footer__container p {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+.footer__container ul {
+  list-style: none;
+}
+.footer__container ul li {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .encabezado .desplegar__opciones aside {
+    width: 170px;
+    height: 90px;
+    background-color: black;
+    border: 3px solid rgb(106, 103, 255);
+  }
+  .encabezado .desplegar__opciones aside a {
+    color: white;
+    text-decoration: none;
+  }
+  .encabezado .desplegar__opciones aside a ul {
+    list-style: none;
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+    font-size: 15px;
+  }
+  .encabezado .desplegar__opciones aside a ul li:hover:nth-child(1) {
+    background-color: rgb(106, 103, 255);
+  }
+  .encabezado .desplegar__opciones aside a ul li:hover:nth-child(2) {
+    background-color: rgb(106, 103, 255);
+  }
+  .encabezado .desplegar__opciones aside a ul li {
+    -webkit-margin-before: 15px;
+            margin-block-start: 15px;
+  }
+  .encabezado .desplegar__opciones .option__temas {
+    -webkit-margin-start: 5px;
+            margin-inline-start: 5px;
+  }
+  .encabezado .desplegar__opciones .option__operaciones {
+    -webkit-margin-start: 260px;
+            margin-inline-start: 260px;
+    -webkit-margin-after: 10px;
+            margin-block-end: 10px;
+  }
 }
