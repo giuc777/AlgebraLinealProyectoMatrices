@@ -1,0 +1,33 @@
+extend suma.pug 
+block  suma
+            div.encabezado
+                header
+                    span  
+                        h1.encabezado__titulo #{titulo}
+                nav.menu__opciones 
+                        ul.opciones__menu 
+                            a(href="../index.html") 
+                                li.opcion__temas #{opciones[2]}
+                            li.opcion_operaciones #{opciones_operaciones[0]}
+            article.contenido
+                section.contenido__cuerpo
+                    h2.contenido__cuerpo__titulo Suma de Matrices
+                    form(action="", class="formulario")
+                        p.contenido__cuerpo__contenido Elige la dimencion de la matriz:
+                        label.contenido__cuerpo__contenido Colummnas
+                        input(type="number", class="NumColumnas", class="Styleinput1", inputmode="numeric", value ="2", min="2", max ="10")  
+                        label.contenido__cuerpo__contenido Filas
+                        input(type="number", class="NumFilas",class="Styleinput1", inputmode="numeric", value ="2", min="2", max ="10")
+                        br
+                        input(type="submit", value="Crear Matriz", class="BotomCrearMatriz")
+                    section(class="MatrizACrear")
+                        article(class="MatrizACrear__ParteEsterior")
+                            label (Opcional) 
+                            input(type="number", class="Styleinput2")
+                            .MatrzACrear__Interior1
+                            span +
+                            label (Opcional) 
+                            input(type="number", class="Styleinput2")
+                            .MatrzACrear__Interior2
+                        
+                    

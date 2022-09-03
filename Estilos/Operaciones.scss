@@ -9,6 +9,7 @@ $LetraParafo_Contenido: 25px;
 $Letra_footer: 15px;
 $Opciones__list: 20px;
 $Opciones__responsive: 15px;
+$Letra__Botom: 20px;
 
 *{
     box-sizing: border-box;
@@ -51,10 +52,6 @@ $Opciones__responsive: 15px;
                 background-color: $color_resaltado;
                 cursor: pointer;
             }
-            li:hover:nth-child(2){
-                background-color: $color_resaltado;
-                cursor: pointer;
-            }
         }
         a{
             text-decoration: none;
@@ -63,40 +60,13 @@ $Opciones__responsive: 15px;
         li{
             margin: 5px;
             font-size: $Mediumlettre;
+            color: $ColorClaroLetras;
             
         }
         
         
     }
-    .desplegar__opciones{
-        display: flex;
-        aside{
-            width: 205px;
-            height: 100px;
-            background-color: $ColorFondo;
-            border: 3px solid $color_resaltado;
-            
-            ul{
-                list-style: none;
-                margin-inline-start: 0;
-                a{
-                    color: $ColorClaroLetras;
-                    text-decoration: none;
-                    font-size:$Opciones__list;
-                    li:hover:nth-child(1){
-                        background-color: $color_resaltado;
-                    }
-                    li:hover:nth-child(2){
-                        background-color: $color_resaltado;
-                    }
-                    
-                    li{
-                        margin-block-start: 15px;
-                    }
-                }
-            }
-        }
-    }
+   
     .option__temas{
         margin-inline-start: 350px;
         margin-block-end: 10px;
@@ -112,7 +82,6 @@ $Opciones__responsive: 15px;
     justify-items: center;
     &__cuerpo{
         width: 70%;
-        text-align: justify;
         padding-block-start: 30px;
         padding-block-end: 30px;
         padding-inline-start: 20px;
@@ -120,12 +89,30 @@ $Opciones__responsive: 15px;
         background-color: $ColorClaroLetras;
         &__titulo{
             font-size: $LetraTitulo_Contenido;
+            text-align: center;
         }
         &__contenido{
             font-size: $LetraParafo_Contenido;
         }
     }
-}
+    .formulario{
+        display: grid;
+        place-items: center;
+        .BotomCrearMatriz{
+            width: 200px;
+            height: 50px;
+            font-size: $Letra__Botom;
+            background-color: $ColorFondo;
+            color: $ColorClaroLetras;
+            margin-block-start: 15px;
+        }
+        .Styleinput1{
+            width: 100px;
+            height: 40px;
+            font-size: $Letra__Botom;
+        }
+    }
+    }
 
 .footer{
     background-color: $ColorFondo;
@@ -150,6 +137,22 @@ $Opciones__responsive: 15px;
                 
             }
         }
+    }
+}
+
+.MatrizACrear{
+    display: grid;
+    .Styleinput2{
+        width: 50px;
+        height: 40px;
+        font-size: $Letra__Botom;
+    }
+    div{
+        height: 30px;
+        width: 30px;
+    }
+    span{
+        font-size: $LetraParafo_Contenido;
     }
 }
 

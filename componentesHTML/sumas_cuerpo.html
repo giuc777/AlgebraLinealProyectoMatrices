@@ -1,0 +1,61 @@
+
+<!--Variables-->
+<!--Cuerpo del HTML--><!DOCTYPE html>
+<html> 
+  <head> 
+    <meta charset="UTF-8">
+    <title>suma Matriz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Estilos/operaciones.css">
+  </head>
+  <body>
+    <main class="container__general">
+      <div class="encabezado">
+        <header><span> 
+            <h1 class="encabezado__titulo">Matrices</h1></span></header>
+        <nav class="menu__opciones"> 
+          <ul class="opciones__menu"> <a href="../index.html"> 
+              <li class="opcion__temas">regresar</li></a>
+            <li class="opcion_operaciones">Suma</li>
+          </ul>
+        </nav>
+      </div>
+      <article class="contenido">
+        <section class="contenido__cuerpo">
+          <h2 class="contenido__cuerpo__titulo">Suma de Matrices</h2>
+          <form class="formulario" action="">
+            <p class="contenido__cuerpo__contenido">Elige la dimencion de la matriz:</p>
+            <label class="contenido__cuerpo__contenido">Colummnas</label>
+            <input class="NumColumnas Styleinput1" type="number" inputmode="numeric" value="2" min="2" max="10">
+            <label class="contenido__cuerpo__contenido">Filas</label>
+            <input class="NumFilas Styleinput1" type="number" inputmode="numeric" value="2" min="2" max="10"><br>
+            <input class="BotomCrearMatriz" type="submit" value="Crear Matriz">
+          </form>
+          <section class="MatrizACrear">
+            <article class="MatrizACrear__ParteEsterior">
+              <label>(Opcional) </label>
+              <input class="Styleinput2" type="number">
+              <div class="MatrzACrear__Interior1"></div><span>+</span>
+              <label>(Opcional) </label>
+              <input class="Styleinput2" type="number">
+              <div class="MatrzACrear__Interior2"></div>
+            </article>
+          </section>
+        </section>
+      </article>
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="container__contenido__footer">Este es un proyecto para el curso de Algebra lineal hecho por:</p>
+          <ul class="container__nombres"> 
+            <li class="nombres__letras">Gadiel </li>
+            <li class="nombres__letras">Jairon </li>
+            <li class="nombres__letras">Juan Luis</li>
+          </ul>
+          <p class="container__licencia">Redaccion y creación del proyecto hecho por los mismos.</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

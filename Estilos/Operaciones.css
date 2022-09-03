@@ -45,10 +45,6 @@
   background-color: rgb(106, 103, 255);
   cursor: pointer;
 }
-.encabezado nav ul li:hover:nth-child(2) {
-  background-color: rgb(106, 103, 255);
-  cursor: pointer;
-}
 .encabezado nav a {
   text-decoration: none;
   color: white;
@@ -56,37 +52,7 @@
 .encabezado nav li {
   margin: 5px;
   font-size: 25px;
-}
-.encabezado .desplegar__opciones {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.encabezado .desplegar__opciones aside {
-  width: 205px;
-  height: 100px;
-  background-color: black;
-  border: 3px solid rgb(106, 103, 255);
-}
-.encabezado .desplegar__opciones aside ul {
-  list-style: none;
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
-}
-.encabezado .desplegar__opciones aside ul a {
   color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
-.encabezado .desplegar__opciones aside ul a li:hover:nth-child(1) {
-  background-color: rgb(106, 103, 255);
-}
-.encabezado .desplegar__opciones aside ul a li:hover:nth-child(2) {
-  background-color: rgb(106, 103, 255);
-}
-.encabezado .desplegar__opciones aside ul a li {
-  -webkit-margin-before: 15px;
-          margin-block-start: 15px;
 }
 .encabezado .option__temas {
   -webkit-margin-start: 350px;
@@ -109,7 +75,6 @@
 }
 .contenido__cuerpo {
   width: 70%;
-  text-align: justify;
   -webkit-padding-before: 30px;
           padding-block-start: 30px;
   -webkit-padding-after: 30px;
@@ -122,9 +87,29 @@
 }
 .contenido__cuerpo__titulo {
   font-size: 35px;
+  text-align: center;
 }
 .contenido__cuerpo__contenido {
   font-size: 25px;
+}
+.contenido .formulario {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.contenido .formulario .BotomCrearMatriz {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  -webkit-margin-before: 15px;
+          margin-block-start: 15px;
+}
+.contenido .formulario .Styleinput1 {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
 }
 
 .footer {
@@ -152,6 +137,23 @@
   font-size: 15px;
   color: white;
   text-align: center;
+}
+
+.MatrizACrear {
+  display: -ms-grid;
+  display: grid;
+}
+.MatrizACrear .Styleinput2 {
+  width: 50px;
+  height: 40px;
+  font-size: 20px;
+}
+.MatrizACrear div {
+  height: 30px;
+  width: 30px;
+}
+.MatrizACrear span {
+  font-size: 25px;
 }
 
 @media (max-width: 640px) {

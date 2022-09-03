@@ -1,21 +1,5 @@
-//Variables
--var titulo = "Matrices"
--var opciones = ["Temas", "Operaciones"]
--var opciones_temas =["Tipos de matrices", "Usos de matrices"]
--var opciones_operaciones = ["Suma", "Multiplicación"]
-
-//Cuerpo del HTML
-doctype HTML
-html 
-    head 
-        meta(charset="UTF-8")
-        title matrizMenu
-        link(rel="preconnect" href="https://fonts.googleapis.com")
-        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-        link(href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;700&display=swap" rel="stylesheet")
-        link(rel="stylesheet", href="./Estilos/Estilos.css") 
-    body 
-        main.container__general
+extend componentesHTML/encabezado.pug 
+block contenidos 
             div.encabezado
                 header
                     span  
@@ -27,28 +11,24 @@ html
                             li.opcion_operaciones #{opciones[1]}
                 .desplegar__opciones
                     aside(class="option__temas", class="inactive")
-                        a(href ="#" class ="temas__letras")
                             ul.letras__list 
-                                each i in opciones_temas 
-                                    li.list__option=i
+                                a(href="#")
+                                    li #{opciones_temas[0]}
+                                a(href="#")
+                                    li #{opciones_temas[1]}
                     aside(class="option__operaciones", class="inactive")
                         a(href ="#" class ="temas__letras")
                             ul.letras__list 
-                                each i in opciones_operaciones 
-                                    li.list__option=i
+                                a(href="componentesHTML/sumas_cuerpo.html")
+                                    li #{opciones_operaciones[0]}
+                                a(href="#")
+                                    li #{opciones_operaciones[1]}
             article.contenido
                 section.contenido__cuerpo
                     h2.contenido__cuerpo__titulo ¿Que es una matriz?
                     p.contenido__cuerpo__contenido Son parte importante en la algebra lineal, y aque se estudian las propiedades de la mismas, ya que tienen complementan temas como los vectores y los sistemas de ecuaciones lineales.
                     p.contenido__cuerpo__contenido Son elementos en conjuntos ordenados de una estructura de filas y columnas.Dependiendo de sus filas y columnas que tenga pordemos hablar de que tiene cierta dimención.
-            footer.footer
-                .footer__container
-                    p.container__contenido__footer Este es un proyecto para el curso de Algebra lineal hecho por:
-                    ul.container__nombres 
-                        li.nombres__letras Gadiel 
-                        li.nombres__letras Jairon 
-                        li.nombres__letras Juan Luis
-                    p.container__licencia Redaccion y creación del proyecto hecho por los mismos.
+            
             script(src="./JS/main.js")
                     
 
