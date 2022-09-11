@@ -4,7 +4,7 @@
 <html> 
   <head> 
     <meta charset="UTF-8">
-    <title>suma Matriz</title>
+    <title>Resultado Matriz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;700&amp;display=swap" rel="stylesheet">
@@ -27,8 +27,6 @@
           <h2 class="contenido__cuerpo__titulo">Suma de Matrices</h2>
           <form class="formulario" action="">
             <p class="contenido__cuerpo__contenido">Elige la dimencion de la matriz:</p>
-            <p class="contenido__cuerpo__contenido nota">Nota:</p>
-            <p class="contenido__cuerpo__contenido">Si las columnas y filas no son las deseadas vuelve a presionar, volver a crear matriz</p>
             <label class="contenido__cuerpo__contenido">Colummnas</label>
             <input class="NumColumnas Styleinput1" type="number" inputmode="numeric" value="2" min="2" max="10" ondrop="return false;" onpaste="return false;" onkeypress="return event.charCode&gt;=48 &amp;&amp; event.charCode&lt;=57" required>
             <label class="contenido__cuerpo__contenido">Filas</label>
@@ -37,32 +35,24 @@
           </form>
           <section class="inactive Matrices">
             <article class="MatrizACrear">
-              <form class="ReqSumar">
+              <form>
                 <label>(Opcional) </label>
-                <input class="Styleinput2 Escalar1" type="number" value="1" ondrop="return false;" onpaste="return false;" onkeypress="return event.charCode&gt;=48 &amp;&amp; event.charCode&lt;=57" required><span>x</span>
+                <input class="Styleinput2" type="number" value="1" ondrop="return false;" onpaste="return false;" onkeypress="return event.charCode&gt;=48 &amp;&amp; event.charCode&lt;=57" required><span>x</span>
                 <div class="MatrzACrear__Interior1">
                   <table class="tabla1"></table>
                 </div><br><span>+</span><br>
                 <label>(Opcional) </label>
-                <input class="Styleinput2 Escalar2" type="number" value="1" ondrop="return false;" onpaste="return false;" onkeypress="return event.charCode&gt;=48 &amp;&amp; event.charCode&lt;=57" required><span>x</span>
+                <input class="Styleinput2" type="number" value="1" ondrop="return false;" onpaste="return false;" onkeypress="return event.charCode&gt;=48 &amp;&amp; event.charCode&lt;=57" required><span>x</span>
                 <div class="MatrzACrear__Interior2">
                   <table class="tabla2"></table>
                   <input class="Botom" type="submit" value="Volver a crear matriz">
-                  <input class="Botom BotomSumar" type="submit" value="Sumar matriz">
+                  <input class="Botom" type="submit" value="Sumar matriz">
                 </div>
               </form>
-            </article>
-            <article class="Resuldado__suma inactive">
-              <section class="resultado"> 
-                <table class="values"></table><a href="./sumas_cuerpo.html"> 
-                  <input class="Botom" type="submit" value="Hacer otra suma"></a><a href="../index.html"> 
-                  <input class="Botom" type="submit" value="Regresar al inicio"></a>
-              </section>
             </article>
           </section>
         </section>
       </article>
-      <script src="../JS/operaciones.js"></script>
       <footer class="footer">
         <div class="footer__container">
           <p class="container__contenido__footer">Este es un proyecto para el curso de Algebra lineal hecho por:</p>

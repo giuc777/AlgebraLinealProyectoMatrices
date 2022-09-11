@@ -8,7 +8,7 @@ $LetraTitulo_Contenido: 35px;
 $LetraParafo_Contenido: 25px;
 $Letra_footer: 15px;
 $Opciones__list: 20px;
-$Opciones__responsive: 15px;
+$Opciones__responsive: 18px;
 
 *{
     box-sizing: border-box;
@@ -157,17 +157,20 @@ $Opciones__responsive: 15px;
     .encabezado{
         .desplegar__opciones{
             aside{
-                width: 170px;
+                width: 150px;
                 height: 90px;
                 background-color: $ColorFondo;
                 border: 3px solid $color_resaltado;
                 a{
                     color: $ColorClaroLetras;
                     text-decoration: none;
-                    
-                    ul{
-                        list-style: none;
-                        margin-inline-start: 0;
+                }
+                ul{
+                    list-style: none;
+                    margin: 0;
+                    padding-inline-start: 3px;
+                    a{
+                        margin: 0;
                         font-size: $Opciones__responsive;
                         li:hover:nth-child(1){
                             background-color: $color_resaltado;
@@ -175,18 +178,15 @@ $Opciones__responsive: 15px;
                         li:hover:nth-child(2){
                             background-color: $color_resaltado;
                         }
-                        
-                        li{
-                            margin-block-start: 15px;
-                        }
                     }
+                    
                 }
             }
             .option__temas{
-                margin-inline-start:5px;
+                margin-inline-start:100px;
             }
             .option__operaciones{
-                margin-inline-start: 260px;
+                margin-inline-start: 150px;
                 margin-block-end: 10px;
             }
         }

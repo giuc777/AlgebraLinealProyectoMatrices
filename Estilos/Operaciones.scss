@@ -16,10 +16,13 @@ $Letra__Botom: 20px;
     padding-top: 0;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
+    .Botom:hover{
+        cursor: pointer;
+    }
 }
 
 .inactive{
-    display: none;
+  display: none;
 }
 
 .encabezado{
@@ -87,17 +90,24 @@ $Letra__Botom: 20px;
         padding-inline-start: 20px;
         padding-inline-end: 20px;
         background-color: $ColorClaroLetras;
+        .nota{
+            color: red;
+            font-weight: bold;
+        }
         &__titulo{
             font-size: $LetraTitulo_Contenido;
             text-align: center;
         }
         &__contenido{
             font-size: $LetraParafo_Contenido;
+            
+            }
         }
     }
     .formulario{
         display: grid;
         place-items: center;
+        gap: 15px;
         .BotomCrearMatriz{
             width: 200px;
             height: 50px;
@@ -110,9 +120,44 @@ $Letra__Botom: 20px;
             width: 100px;
             height: 40px;
             font-size: $Letra__Botom;
+           
+        }
+
+    }
+    table{
+        display: grid;
+        gap: 8px;
+        place-content: center;
+    }
+    .resultado{
+        display: grid;
+        place-items: center;
+        .Botom{
+            width: 200px;
+            height: 50px;
+            font-size: $Letra__Botom;
+            background-color: $ColorFondo;
+            color: $ColorClaroLetras;
+            margin-block-start: 15px;
+        } 
+    }
+    .Resuldado__suma{
+        table{
+            margin-block-start: 30px;
+            margin-block-end:  30px;
+            display: grid;
+            place-content: center;   
+        }
+        .resultado{
+            .Styleinput2{
+                width: 100px;
+                height: 40px;
+                font-size: $Letra__Botom;
+               
+            }
         }
     }
-    }
+    
 
 .footer{
     background-color: $ColorFondo;
@@ -142,18 +187,30 @@ $Letra__Botom: 20px;
 
 .MatrizACrear{
     display: grid;
+    place-items: center;
+    margin-block-start: 30px ;
     .Styleinput2{
         width: 50px;
         height: 40px;
         font-size: $Letra__Botom;
     }
     div{
-        height: 30px;
-        width: 30px;
+        margin-block-start: 10px;
+        height: auto;
+        width: auto;
     }
     span{
         font-size: $LetraParafo_Contenido;
     }
+    .Botom{
+        width: 200px;
+            height: 50px;
+            font-size: $Letra__Botom;
+            background-color: $ColorFondo;
+            color: $ColorClaroLetras;
+            margin-block-start: 15px;
+    }
+
 }
 
 @media (max-width: 640px){

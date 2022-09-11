@@ -5,6 +5,9 @@
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
 }
+* .Botom:hover {
+  cursor: pointer;
+}
 
 .inactive {
   display: none;
@@ -85,6 +88,10 @@
           padding-inline-end: 20px;
   background-color: white;
 }
+.contenido__cuerpo .nota {
+  color: red;
+  font-weight: bold;
+}
 .contenido__cuerpo__titulo {
   font-size: 35px;
   text-align: center;
@@ -92,12 +99,14 @@
 .contenido__cuerpo__contenido {
   font-size: 25px;
 }
-.contenido .formulario {
+
+.formulario {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  gap: 15px;
 }
-.contenido .formulario .BotomCrearMatriz {
+.formulario .BotomCrearMatriz {
   width: 200px;
   height: 50px;
   font-size: 20px;
@@ -106,7 +115,44 @@
   -webkit-margin-before: 15px;
           margin-block-start: 15px;
 }
-.contenido .formulario .Styleinput1 {
+.formulario .Styleinput1 {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+}
+
+table {
+  display: -ms-grid;
+  display: grid;
+  gap: 8px;
+  place-content: center;
+}
+
+.resultado {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.resultado .Botom {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  -webkit-margin-before: 15px;
+          margin-block-start: 15px;
+}
+
+.Resuldado__suma table {
+  -webkit-margin-before: 30px;
+          margin-block-start: 30px;
+  -webkit-margin-after: 30px;
+          margin-block-end: 30px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+.Resuldado__suma .resultado .Styleinput2 {
   width: 100px;
   height: 40px;
   font-size: 20px;
@@ -142,6 +188,9 @@
 .MatrizACrear {
   display: -ms-grid;
   display: grid;
+  place-items: center;
+  -webkit-margin-before: 30px;
+          margin-block-start: 30px;
 }
 .MatrizACrear .Styleinput2 {
   width: 50px;
@@ -149,11 +198,22 @@
   font-size: 20px;
 }
 .MatrizACrear div {
-  height: 30px;
-  width: 30px;
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
+  height: auto;
+  width: auto;
 }
 .MatrizACrear span {
   font-size: 25px;
+}
+.MatrizACrear .Botom {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  -webkit-margin-before: 15px;
+          margin-block-start: 15px;
 }
 
 @media (max-width: 640px) {

@@ -156,7 +156,7 @@
 
 @media (max-width: 640px) {
   .encabezado .desplegar__opciones aside {
-    width: 170px;
+    width: 150px;
     height: 90px;
     background-color: black;
     border: 3px solid rgb(106, 103, 255);
@@ -165,29 +165,29 @@
     color: white;
     text-decoration: none;
   }
-  .encabezado .desplegar__opciones aside a ul {
+  .encabezado .desplegar__opciones aside ul {
     list-style: none;
-    -webkit-margin-start: 0;
-            margin-inline-start: 0;
-    font-size: 15px;
+    margin: 0;
+    -webkit-padding-start: 3px;
+            padding-inline-start: 3px;
   }
-  .encabezado .desplegar__opciones aside a ul li:hover:nth-child(1) {
+  .encabezado .desplegar__opciones aside ul a {
+    margin: 0;
+    font-size: 18px;
+  }
+  .encabezado .desplegar__opciones aside ul a li:hover:nth-child(1) {
     background-color: rgb(106, 103, 255);
   }
-  .encabezado .desplegar__opciones aside a ul li:hover:nth-child(2) {
+  .encabezado .desplegar__opciones aside ul a li:hover:nth-child(2) {
     background-color: rgb(106, 103, 255);
-  }
-  .encabezado .desplegar__opciones aside a ul li {
-    -webkit-margin-before: 15px;
-            margin-block-start: 15px;
   }
   .encabezado .desplegar__opciones .option__temas {
-    -webkit-margin-start: 5px;
-            margin-inline-start: 5px;
+    -webkit-margin-start: 100px;
+            margin-inline-start: 100px;
   }
   .encabezado .desplegar__opciones .option__operaciones {
-    -webkit-margin-start: 260px;
-            margin-inline-start: 260px;
+    -webkit-margin-start: 150px;
+            margin-inline-start: 150px;
     -webkit-margin-after: 10px;
             margin-block-end: 10px;
   }
