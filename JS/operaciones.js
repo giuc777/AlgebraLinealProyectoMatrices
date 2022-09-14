@@ -12,21 +12,24 @@ const ResuldadoSuma = document.querySelector('.Resuldado__suma');
 const tabla1 = document.querySelector('.tabla1');
 const tabla2 = document.querySelector('.tabla2');
 const tablaResultado = document.querySelector('.values');
-const escalar1 = document.querySelector('.Escalar1')
-const escalar2 = document.querySelector('.Escalar2')
+const escalar1 = document.querySelector('.Escalar1');
+const escalar2 = document.querySelector('.Escalar2');
+const BorrarDatos = document.querySelector('.BorrarDatos');
 total_filas = filas.value;
 total_columnas = columnas.value;
+let CrearDeNuevoMatriz = 1;
 
 //Funciones de los botones
-
+//botom que crea la matriz
 formulario.addEventListener('submit', crearCeldas);
-
+//botom que recarga la pagina
 botomRecargar.addEventListener('click', _ =>{
     location.reload();
-})
-
-formularioSuma.addEventListener('submit', realizarSuma)
-
+});
+//botom que realiza la suma
+formularioSuma.addEventListener('submit', realizarSuma);
+//botom borra datos
+BorrarDatos.addEventListener('click', borardatos)
 
 //funciones de los botnoes
 
@@ -134,6 +137,7 @@ function filasColummnas(columnas, filas, noValores){
 
 
 function valor(){
+    if(CrearDeNuevoMatriz == 1){
     let i = 0
     let fil = "filaResultado";
     let datos = 1;
@@ -151,6 +155,7 @@ function valor(){
         o = o + 1;
         datos = columns + datos;
         fil = "filaResultado";
+    }
     }
 
     Sumando();
@@ -194,10 +199,6 @@ function Sumando(){
     contador = contador*3;
     agregandoSuma(contador, i, no, matrizSumada);
 
-
-    console.log(MatrizSumar1);
-    console.log(MatrizSumar2);
-    console.log(matrizSumada);
 }
 
 function creandoMatrices(matriz, contador, i, no, escalar){
@@ -254,3 +255,31 @@ function agregandoSuma(cuanto, i, numero, matriz){
         
     }
 }
+function borardatos(){
+    ResuldadoSuma.classList.add('inactive');
+    formularioSuma.reset();
+    quitarinactivo();
+
+}
+
+function quitarinactivo(){
+    CrearDeNuevoMatriz = CrearDeNuevoMatriz + 1;
+    let  dato = ".valor";
+    let o = 1;
+    let i = 0;
+    cuanto = (total_filas*total_columnas)*2;
+    while(i != cuanto)
+    {
+        dato = dato + o;
+        let añade = document.querySelector(dato);
+        añade.removeAttribute("disabled");
+        dato = ".valor";
+        o = o + 1;
+        i = i + 1;
+        
+    }
+    escalar1.removeAttribute("disabled");
+    escalar2.removeAttribute("disabled");
+    BotomSuma.removeAttribute("disabled");
+    botomRecargar.classList.toggle('inactive');
+};
