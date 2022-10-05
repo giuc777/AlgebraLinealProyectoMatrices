@@ -215,39 +215,9 @@ $Letra__Botom: 20px;
 
 @media (max-width: 640px){
     .encabezado{
-        .desplegar__opciones{
-            aside{
-                width: 170px;
-                height: 90px;
-                background-color: $ColorFondo;
-                border: 3px solid $color_resaltado;
-                a{
-                    color: $ColorClaroLetras;
-                    text-decoration: none;
-                    
-                    ul{
-                        list-style: none;
-                        margin-inline-start: 0;
-                        font-size: $Opciones__responsive;
-                        li:hover:nth-child(1){
-                            background-color: $color_resaltado;
-                        }
-                        li:hover:nth-child(2){
-                            background-color: $color_resaltado;
-                        }
-                        
-                        li{
-                            margin-block-start: 15px;
-                        }
-                    }
-                }
-            }
-            .option__temas{
-                margin-inline-start:5px;
-            }
-            .option__operaciones{
-                margin-inline-start: 260px;
-                margin-block-end: 10px;
+        ul{
+            li{
+                font-size: $Opciones__list;
             }
         }
     }

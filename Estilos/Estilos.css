@@ -58,37 +58,6 @@
   margin: 5px;
   font-size: 25px;
 }
-.encabezado .desplegar__opciones {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.encabezado .desplegar__opciones aside {
-  width: 205px;
-  height: 100px;
-  background-color: black;
-  border: 3px solid rgb(106, 103, 255);
-}
-.encabezado .desplegar__opciones aside ul {
-  list-style: none;
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
-}
-.encabezado .desplegar__opciones aside ul a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
-.encabezado .desplegar__opciones aside ul a li:hover:nth-child(1) {
-  background-color: rgb(106, 103, 255);
-}
-.encabezado .desplegar__opciones aside ul a li:hover:nth-child(2) {
-  background-color: rgb(106, 103, 255);
-}
-.encabezado .desplegar__opciones aside ul a li {
-  -webkit-margin-before: 15px;
-          margin-block-start: 15px;
-}
 .encabezado .option__temas {
   -webkit-margin-start: 350px;
           margin-inline-start: 350px;
@@ -156,40 +125,7 @@
 }
 
 @media (max-width: 640px) {
-  .encabezado .desplegar__opciones aside {
-    width: 150px;
-    height: 90px;
-    background-color: black;
-    border: 3px solid rgb(106, 103, 255);
-  }
-  .encabezado .desplegar__opciones aside a {
-    color: white;
-    text-decoration: none;
-  }
-  .encabezado .desplegar__opciones aside ul {
-    list-style: none;
-    margin: 0;
-    -webkit-padding-start: 3px;
-            padding-inline-start: 3px;
-  }
-  .encabezado .desplegar__opciones aside ul a {
-    margin: 0;
-    font-size: 18px;
-  }
-  .encabezado .desplegar__opciones aside ul a li:hover:nth-child(1) {
-    background-color: rgb(106, 103, 255);
-  }
-  .encabezado .desplegar__opciones aside ul a li:hover:nth-child(2) {
-    background-color: rgb(106, 103, 255);
-  }
-  .encabezado .desplegar__opciones .option__temas {
-    -webkit-margin-start: 100px;
-            margin-inline-start: 100px;
-  }
-  .encabezado .desplegar__opciones .option__operaciones {
-    -webkit-margin-start: 150px;
-            margin-inline-start: 150px;
-    -webkit-margin-after: 10px;
-            margin-block-end: 10px;
+  .encabezado nav ul li {
+    font-size: 20px;
   }
 }

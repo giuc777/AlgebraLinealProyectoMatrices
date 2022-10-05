@@ -217,40 +217,7 @@ table {
 }
 
 @media (max-width: 640px) {
-  .encabezado .desplegar__opciones aside {
-    width: 170px;
-    height: 90px;
-    background-color: black;
-    border: 3px solid rgb(106, 103, 255);
-  }
-  .encabezado .desplegar__opciones aside a {
-    color: white;
-    text-decoration: none;
-  }
-  .encabezado .desplegar__opciones aside a ul {
-    list-style: none;
-    -webkit-margin-start: 0;
-            margin-inline-start: 0;
-    font-size: 15px;
-  }
-  .encabezado .desplegar__opciones aside a ul li:hover:nth-child(1) {
-    background-color: rgb(106, 103, 255);
-  }
-  .encabezado .desplegar__opciones aside a ul li:hover:nth-child(2) {
-    background-color: rgb(106, 103, 255);
-  }
-  .encabezado .desplegar__opciones aside a ul li {
-    -webkit-margin-before: 15px;
-            margin-block-start: 15px;
-  }
-  .encabezado .desplegar__opciones .option__temas {
-    -webkit-margin-start: 5px;
-            margin-inline-start: 5px;
-  }
-  .encabezado .desplegar__opciones .option__operaciones {
-    -webkit-margin-start: 260px;
-            margin-inline-start: 260px;
-    -webkit-margin-after: 10px;
-            margin-block-end: 10px;
+  .encabezado ul li {
+    font-size: 20px;
   }
 }
