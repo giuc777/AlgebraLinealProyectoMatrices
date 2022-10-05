@@ -46,7 +46,7 @@ $Opciones__responsive: 18px;
         ul{
             list-style: none;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             li:hover:nth-child(1){
                 background-color: $color_resaltado;
                 cursor: pointer;

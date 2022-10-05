@@ -5,24 +5,12 @@ block contenidos
                     span  
                         h1.encabezado__titulo #{titulo}
                 nav.menu__opciones 
-                    a(href ="#" class ="menu_opciones__letras")
-                        ul.opciones__menu 
-                            li.opcion__temas #{opciones[0]}
-                            li.opcion_operaciones #{opciones[1]}
-                .desplegar__opciones
-                    aside(class="option__temas", class="inactive")
-                            ul.letras__list 
-                                a(href="#")
-                                    li #{opciones_temas[0]}
-                                a(href="#")
-                                    li #{opciones_temas[1]}
-                    aside(class="option__operaciones", class="inactive")
-                        a(href ="#" class ="temas__letras")
+                    a(href ="#" class ="temas__letras")
                             ul.letras__list 
                                 a(href="componentesHTML/sumas_cuerpo.html")
-                                    li #{opciones_operaciones[0]}
-                                a(href="#")
-                                    li #{opciones_operaciones[1]}
+                                    li Realizar Suma De Matrices
+
+                                
             article.contenido
                 section.contenido__cuerpo
                     h2.contenido__cuerpo__titulo ¿Que es una matriz?

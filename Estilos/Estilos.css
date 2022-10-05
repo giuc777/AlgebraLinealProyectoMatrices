@@ -38,8 +38,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .encabezado nav ul li:hover:nth-child(1) {
   background-color: rgb(106, 103, 255);
