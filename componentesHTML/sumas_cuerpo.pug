@@ -15,7 +15,6 @@ block  suma
                     form(action="", class="formulario")
                         p.contenido__cuerpo__contenido Elige la dimencion de la matriz:
                         p(class="contenido__cuerpo__contenido", class="nota") Nota:
-                        p.contenido__cuerpo__contenido Si las columnas y filas no son las deseadas vuelve a presionar, volver a crear matriz
                         label.contenido__cuerpo__contenido Colummnas
                         input(type="number", class="NumColumnas", class="Styleinput1", inputmode="numeric", value ="2", min="2", max ="10" ondrop="return false;" onpaste="return false;" onkeypress="return event.charCode>=48 && event.charCode<=57" required)  
                         label.contenido__cuerpo__contenido Filas
@@ -39,8 +38,10 @@ block  suma
                                     span x
                                     .MatrzACrear__Interior2
                                         table(class="tabla2")
-                                        input(type="submit", value="Volver a crear matriz", class="Botom")
+                                        
+                                        input(type="submit" value="Volver hacer matriz" class ="Botom")
                                         input(type="submit" value="Sumar matriz" class="Botom", class="BotomSumar")
+        
                         article(class="Resuldado__suma", class="inactive")
                             section.resultado 
                                 table.values

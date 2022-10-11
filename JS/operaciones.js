@@ -3,9 +3,9 @@ const crearMartiz = document.querySelector('.BotomCrearMatriz');
 const Matriz1 = document.querySelector('.MatrzACrear__Interior1');
 const Matriz2 = document.querySelector('.MatrzACrear__Interior2');
 const formulario = document.querySelector('.formulario');
-const botomRecargar = document.querySelector('.Botom');
 const columnas = document.querySelector('.NumColumnas');
 const filas = document.querySelector('.NumFilas');
+const recargarPagina = document.querySelector('.Botom')
 const BotomSuma = document.querySelector('.BotomSumar');
 const formularioSuma = document.querySelector('.ReqSumar');
 const ResuldadoSuma = document.querySelector('.Resuldado__suma');
@@ -15,17 +15,19 @@ const tablaResultado = document.querySelector('.values');
 const escalar1 = document.querySelector('.Escalar1');
 const escalar2 = document.querySelector('.Escalar2');
 const BorrarDatos = document.querySelector('.BorrarDatos');
-total_filas = filas.value;
-total_columnas = columnas.value;
+let total_filas;
+let total_columnas;
+
 let CrearDeNuevoMatriz = 1;
 
 //Funciones de los botones
 //botom que crea la matriz
 formulario.addEventListener('submit', crearCeldas);
-//botom que recarga la pagina
-botomRecargar.addEventListener('click', _ =>{
+
+//Recargar pagina
+recargarPagina.addEventListener('click', _=>{
     location.reload();
-});
+})
 //botom que realiza la suma
 formularioSuma.addEventListener('submit', realizarSuma);
 //botom borra datos
@@ -35,6 +37,8 @@ BorrarDatos.addEventListener('click', borardatos)
 
 function crearCeldas(event) {
     event.preventDefault();
+    total_filas = filas.value;
+    total_columnas = columnas.value;
     crearNoCeldas();
     const divdesbloquear = document.querySelector('.Matrices');
     divdesbloquear.classList.toggle('inactive');
@@ -45,9 +49,11 @@ function crearCeldas(event) {
 };
 
 function realizarSuma(event){
+    total_filas = filas.value;
+    total_columnas = columnas.value;
     event.preventDefault();
     ResuldadoSuma.classList.toggle('inactive');
-    botomRecargar.classList.add('inactive');
+    recargarPagina.classList.add('inactive');
     BotomSuma.setAttribute("disabled", " ");
     bloquear();
     valor();
