@@ -82,15 +82,11 @@
           padding-block-start: 30px;
   -webkit-padding-after: 30px;
           padding-block-end: 30px;
-  -webkit-padding-start: 20px;
-          padding-inline-start: 20px;
-  -webkit-padding-end: 20px;
-          padding-inline-end: 20px;
   background-color: white;
-}
-.contenido__cuerpo .nota {
-  color: red;
-  font-weight: bold;
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
 }
 .contenido__cuerpo__titulo {
   font-size: 35px;

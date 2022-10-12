@@ -287,5 +287,5 @@ function quitarinactivo(){
     escalar1.removeAttribute("disabled");
     escalar2.removeAttribute("disabled");
     BotomSuma.removeAttribute("disabled");
-    botomRecargar.classList.toggle('inactive');
+    recargarPagina.classList.toggle('inactive');
 };

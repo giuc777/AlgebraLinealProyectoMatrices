@@ -89,12 +89,19 @@ $Opciones__responsive: 18px;
         padding-block-end: 30px;
         padding-inline-start: 20px;
         padding-inline-end: 20px;
+        
         background-color: $ColorClaroLetras;
         &__titulo{
             font-size: $LetraTitulo_Contenido;
         }
         &__contenido{
             font-size: $LetraParafo_Contenido;
+            margin-block-end: 30px;
+            margin-block-start: 30px;
+        }
+        img{
+            display: block;
+            margin: auto;
         }
     }
 }
@@ -132,6 +139,14 @@ $Opciones__responsive: 18px;
                 li{
                     font-size: $Opciones__list;
                 }
+            }
+        }
+    }
+    .contenido{
+        &__cuerpo{
+            img{
+                height: 90px;
+                width: 200px;
             }
         }
     }

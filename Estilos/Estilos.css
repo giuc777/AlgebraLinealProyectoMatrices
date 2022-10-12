@@ -95,6 +95,14 @@
 }
 .contenido__cuerpo__contenido {
   font-size: 25px;
+  -webkit-margin-after: 30px;
+          margin-block-end: 30px;
+  -webkit-margin-before: 30px;
+          margin-block-start: 30px;
+}
+.contenido__cuerpo img {
+  display: block;
+  margin: auto;
 }
 
 .footer {
@@ -127,5 +135,10 @@
 @media (max-width: 640px) {
   .encabezado nav ul li {
     font-size: 20px;
+  }
+
+  .contenido__cuerpo img {
+    height: 90px;
+    width: 200px;
   }
 }

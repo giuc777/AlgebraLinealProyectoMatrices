@@ -87,20 +87,16 @@ $Letra__Botom: 20px;
         width: 70%;
         padding-block-start: 30px;
         padding-block-end: 30px;
-        padding-inline-start: 20px;
-        padding-inline-end: 20px;
+        
         background-color: $ColorClaroLetras;
-        .nota{
-            color: red;
-            font-weight: bold;
-        }
+        margin-block-end: 10px;
+        margin-block-start: 10px;
         &__titulo{
             font-size: $LetraTitulo_Contenido;
             text-align: center;
         }
         &__contenido{
             font-size: $LetraParafo_Contenido;
-            
             }
         }
     }
